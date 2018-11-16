@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+.active {
+  color: #08fdd8 !important;
+}
+
 .front-button {
     border: 1px solid #08fdd8;
     border-radius: 3px;
