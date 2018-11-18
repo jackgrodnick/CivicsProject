@@ -6,10 +6,40 @@ body {
  background-color: #252627;
   padding: 0;
 }
+
+.topic {
+    font-size: 22px;
+    font-size: 22px;
+    color: #08fdd8;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
 .example-fed {
   width: 80%;
 margin-left: auto;
 margin-right: auto;
+text-align: center;
+}
+
+.federal-law {
+  color: white !important;
+  display: inline;
+  text-align: center;
+}
+
+.federal-lawno {
+  color: white;
+  display: inline;
+  text-align: center;
+}
+
+.topic-ex {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  text-align: center;
 }
 
 .exapmlelel {
@@ -127,7 +157,7 @@ ul li a {
 .toggle {
   width: 100%;
   padding: 10px 25px;
-  padding-top: 13px !important;
+  padding-top: 14px !important;
   background: #181818;
   text-align: right;
   box-sizing: border-box;
@@ -136,6 +166,13 @@ ul li a {
   display: none;
   min-height: 70px;
   z-index: 9999999999999999999999999
+}
+
+@media screen and (min-width: 1068px) {
+  .LOGO {
+  max-width: 71px !important;
+width: 71px !important;
+}
 }
 
 @media screen and (max-width: 1067px) {
