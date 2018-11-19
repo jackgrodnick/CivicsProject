@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+.homeheight {
+  height: 80vh !important;
+}
+
 .topic {
     font-size: 22px;
     font-size: 22px;
