@@ -11,6 +11,30 @@ body {
   height: 80vh !important;
 }
 
+.htmlo {
+  display: inline;
+  font-style: default !important;
+  font-family: default !important;
+}
+
+.htmlocss{
+  display: inline;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.htmlocssjs {
+  display: inline;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
 .topic {
     font-size: 22px;
     font-size: 22px;
