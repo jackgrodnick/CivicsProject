@@ -64,9 +64,17 @@ Connection/Explanation: This shows popular sovereignty because the U.S. citizens
     </div>
     <div class="topic-ex">
       <h3 class="topic">Topic Example</h3>
-      <p class="para">not done</p>
-    </div>
+      <p class="para">It was super hard for me to find a connection to popular sovereignty and coding websites so i just made a voting counter to connect to it.
 
+Popular sovereignty can be recreated with code. Below should be an election for Trump and Hilliary. So let's pretend this is the state of Minnesota voting for which candidate they want to win. People would vote for which candidate they want to win but they are not directly voting for there candidate. People vote for electors which will vote for the president which is called the electoral college. So just because someone wins the popular vote doesn't mean they will win the presidency just like Hillary won the popular vote but didn't win. So below is an example of this. You can vote for which candidate you want but really your voting for an elector. So below the popular vote wins because your only voting for an elector. This is supposed to represent the people of the United States using their power to vote for the president.</p>
+    </div>
+    <button type="button" id="yes">Trump</button>
+    <button type="button" id="no">Hillary</button>
+    <button type="button" id="result">Result</button>
+    <p>Votes Trump: <span id="votes-yes"></span></p>
+    <p>Votes Hillary: <span id="votes-no"></span></p>
+    <img class ="image image-yes none" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg">
+    <img class ="image image-no none" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/No_sign.svg"><br><br><br><br>
 
 
 
@@ -269,6 +277,48 @@ for (let i = 0; i < elements.length; i++) {
    });
  });
 }
+  </script>
+  <script>
+  // Get the buttons
+  let buttonYes = document.getElementById('yes');
+  let buttonNo = document.getElementById('no');
+  let buttonResult = document.getElementById('result');
+  // Get the images
+  let imageYes = document.querySelector('.image-yes');
+  let imageNo = document.querySelector('.image-no');
+  // Count the votes
+  let votesYes = 0;
+  let votesNo = 0;
+
+  buttonYes.addEventListener('click', function () {
+      votesYes++;
+      document.getElementById('votes-yes').innerHTML = votesYes;
+  });
+
+  buttonNo.addEventListener('click', function () {
+      votesNo++;
+      document.getElementById('votes-no').innerHTML = votesNo;
+  });
+
+  buttonResult.addEventListener('click', function () {
+      verifyWinner(votesYes, votesNo);
+  });
+
+  function verifyWinner(votesYes, votesNo) {
+      cleanResult();
+      if (votesYes > votesNo) {
+        document.querySelector('.image-yes').classList.remove('none');
+      } else if (votesNo > votesYes) {
+         document.querySelector('.image-no').classList.remove('none');
+      } else {
+          console.log('empate');
+      }
+  }
+
+  function cleanResult() {
+    imageYes.classList.add('none');
+    imageNo.classList.add('none');
+  }
   </script>
   </body>
 </html>

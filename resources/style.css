@@ -7,6 +7,13 @@ body {
   padding: 0;
 }
 
+.image {
+  width: 32px;
+}
+.none {
+  display: none;
+}
+
 .homeheight {
   height: 80vh !important;
 }
