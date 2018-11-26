@@ -7,6 +7,55 @@ body {
   padding: 0;
 }
 
+#votes-yes {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.voteee {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#votes-no {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#yes {
+  border: 1px solid #08fdd8;
+border-radius: 3px;
+background: transparent;
+padding: 8px 12px;
+color: #08fdd8;
+font-size: 11px;
+letter-spacing: 4px;
+}
+
+#no {
+  border: 1px solid #08fdd8;
+border-radius: 3px;
+background: transparent;
+padding: 8px 12px;
+color: #08fdd8;
+font-size: 11px;
+letter-spacing: 4px;
+}
+
+#result {
+  border: 1px solid #08fdd8;
+border-radius: 3px;
+background: transparent;
+padding: 8px 12px;
+color: #08fdd8;
+font-size: 11px;
+letter-spacing: 4px;
+align-items:
+}
+
 .image {
   width: 32px;
 }
